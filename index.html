@@ -20,13 +20,29 @@
             font-size: 24px;
             color: #333;
         }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <img src="https://media.giphy.com/media/3og0IPMezFPrxgtXIk/giphy.gif" alt="Cute Apology GIF">
     <div class="message">
-        Sorry, Jarin! Please forgive me. idk what i did that made you block me but whatever I'm sorry.
+        Sorry, Jarin! Please forgive me.
     </div>
-    <button class="button">Next</button>
+    <button class="button" id="nextButton">Next</button>
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function() {
+            window.location.href = 'yes.html';
+        });
+    </script>
 </body>
 </html>
